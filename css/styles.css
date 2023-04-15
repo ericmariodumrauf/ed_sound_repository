@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.font-pers {
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.carousel {
+    display: flex;
+    height: 550px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://www.pioneerdj.com/-/media/project/pioneer/pioneerdj/home/carousel/2023/opus-quad_web_home-carousel_1440x600.jpg");
+}
+
+.text-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    padding-left: 10%;
+    color: white;
+}
+
+.text-carousel .btn-productos{
+    margin-top: 1rem;
+    width: 60%;
+    background-color: white;
+    color: black;
+    align-self: flex-start;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.presentation {
+    color: black;
+    margin-top: 5%;
+    font-size: 4rem;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#info-empresa {
+    margin: 5% 0;
+}
+
+.q-titulo {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.img-contacto {
+    display: flex;
+    flex-flow: column;
+    height: 650px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/contacta-con-nosotros.jpg");
+}
+
+.formulario {
+    
+    width: 40%;
+}
+
+.formulario div {
+    width: 45%;
+    display: grid;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+
+.titulo-formulario {
+    display: inline-flex;
+    flex-flow: row wrap;
+    background-color: black;
+    width: 40%;
+    margin: 2% 2% 0;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.formulario label {
+    font-size: 1.5rem;
+}
+
+.formulario input, .formulario textarea {
+    border-radius: 15px;
+    border: 2px solid gray;
+    padding: 0.2rem 0.5rem;
+}
+
+.div-contacto .card {
+    width: 40%;
+    margin: 2% 2%;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    height: fit-content;
+}
+
+.formulario .mensaje {
+    width: 100%;
+}
+
+.formulario button {
+    font-size: 1.7rem;
+}
+
+.desc{
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: withe;
+}
+
+.card {
+    padding: 2rem;
+    width: 230px;
+    height: auto;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: -1px 0rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.orden1 {
+    order:0;
+}
+
+.orden2 {
+    order:1;
+}
+.orden3 {
+    order:2;
+}
+
+.orden4 {
+    order:3;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.ejemplo-overflow {
+    width: 100px;
+    height: 110px;
+    border: solid 1 px red;
+    display: inline-block;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+.oferta {
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    width: 23%;
+    padding: 0 5px;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.menu-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu-productos li{
+    background-color: black;
+    border-radius: 0.8rem;
+    padding: 5px 10px;
+    font-size: 1.6rem;
+}
+
+#productos {
+    display: flex;
+}
+
+#filtros {
+    width: 20%;
+    margin-top: 3%;
+    padding: 0 4rem;
+}
+
+.div-titulo{
+    border-top: 1px solid rgb(90, 84, 84);
+    padding: 1rem 0; 
+}
+
+.div-titulo div {
+    padding: 0.3rem 1rem;
+}
+
+.titulo-filtro {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#padre-products {
+    width: 80%;
+    display: flex;
+    
+}
+
+.padre-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    gap: 60px;
+    justify-content: center;
+    color: black;
+}
+
+.card h4, .card p, .card button{
+    margin-top: 15px;
+    text-align: center;
+}
+
+button, .card button, .button-conocer, .btn-productos {
+    width: 80%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.button-productos {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 5rem;
+}
+
+.btn-productos{
+    width: 10%;
+    font-size: 2rem;
+}
+
+.button-conocer {
+    margin-top: 1rem;
+    width: 40%;
+}
+
+.title-conocer {
+    font-weight: bold;
+}
+
+.main-galeria {
+    background: black;
+}
+
+.main-galeria h1 {
+    padding: 3rem 0;
+}
+
+.main-galeria {
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.padre-galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.padre-galeria img{
+    object-fit: cover;
+}
+
+.padre-galeria img {
+    width: 70%;
+    height: auto;
+}
+
+.padre-galeria .s-30 {
+    width: 27%;
+}
+
+.padre-galeria .s-70 {
+    width: 70%;
+}
+
+.padre-galeria .s-65 {
+    width: 65%;
+}
+
+.padre-galeria .s-30-1 {
+    width: 31%;
+}
+
+.padre-galeria .s-45 {
+    width: 48%;
+}
+
+.padre-galeria .s-35 {
+    width: 35%;
+    height: 330px;
+}
+
+.padre-galeria .s-30-2 {
+    width: 30%;
+    height: 330px;
+}
+
+.padre-galeria .s-100 {
+    width: 97%;
+}
+
+
+.img-empresa {
+    display: flex;
+    height: 490px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/img-empresa.jpg");
+}
+
+.text-img-empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    margin-left: 5%;
+    padding-bottom: 12rem;
+    font-size: 2rem;
+    color: black;
+    width: 30%;
+}
+
+footer {
+    background-color: black;
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-contacto, .footer-galeria {
+    margin-top: 0rem;
+}
+
+footer div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.div-1 {
+    margin-left: 10%;
+}
+
+.div-2 {
+    margin-right: 10%;
+}
+
+.div-offset {
+    width: 26%;
+}
+
+.div-3 {
+    width: 50%;
+    color: white;
+    padding-top: 1rem;
+}
+
+.div-4 {
+    width: 22%;
+    color: white;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    justify-content: end;
+    flex-direction: row;
+    gap:10px;
+}
+
+.div-logo-footer {
+    margin-left: 6%;
+    width: 10%;
+}
+
+.logo-footer {
+    width: 150px;
+}
+
+.img-wp, .img-ig, .img-fc{
+    width: 10%;
+}
+
+.sob-nos {
+    background-color: black;
+}
+
+.sob-nos h1, .sob-nos h2 {
+    text-align: center;
+    color: white;
+}
+
+.sob-nos h1 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.sob-nos h2 {
+    padding: 2rem 0;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.div-cuad {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cuad {
+    width: 20%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size:2rem;
+    padding: 2rem 0;
+}
+
+.cuad img{
+    width: 20%;
+    padding-bottom: 1rem;
+}
+
+
