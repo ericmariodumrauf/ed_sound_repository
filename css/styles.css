@@ -7,23 +7,26 @@ html {
     font-size: 62.5%;
 }
 
+p{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.row {
+    --bs-gutter-x: -3rem;
+}
+
 .font-pers {
     font-family: 'Bebas Neue', cursive;
 }
 
 header {
+    background-color: black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: black;
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    max-width: 100%;
 }
 
 .logo {
@@ -35,17 +38,134 @@ a {
     text-decoration: none;
 }
 
+#arriba .navbar {
+    width: 100%;
+}
+
+@media (min-width:992px){
+    #arriba .container-fluid {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width:992px){
+    #navbarNav {
+        justify-content: end;
+    }
+}
+
+@media (min-width:1200px){
+    #navbarNav a{
+        font-size: 1.8rem;
+    }
+}
+
+#arriba .navbar-nav {
+    gap: 5px;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width:992px){
+    .navbar-nav {
+        gap: 30px;
+        margin-top: 0.5rem;
+    }
+}
+
 img {
     max-width: 100%;
 }
 
-.carousel {
-    display: flex;
-    height: 550px;
+@media (min-width:992px){
+    .img-mobile {
+        display: none!important;
+    }
+    .img-desktop {
+        display: block!important;
+    }
+}
+
+#carousel_inicio {
+    background-color: black;
+    position: sticky;
+}
+
+#carousel_inicio .carousel-item img{
     max-width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://www.pioneerdj.com/-/media/project/pioneer/pioneerdj/home/carousel/2023/opus-quad_web_home-carousel_1440x600.jpg");
+    object-fit: cover;
+    height: 200px;
+}
+
+@media (min-width: 992px){
+    #carousel_inicio .carousel-caption{
+        bottom: 40%;
+        text-align: left;
+    }
+    #carousel_inicio .btn-productos{
+        background-color: white;
+        color: black;
+        padding: 0rem 1rem;
+    }
+}
+
+@media (min-width:425px){
+    #carousel_inicio .carousel-item img{
+        height: 225px;
+    }
+}
+
+@media (min-width:576px){
+    #carousel_inicio .carousel-item img{
+        height: 250px;
+    }
+}
+
+@media (min-width:768px){
+    #carousel_inicio .carousel-item img{
+        height: 300px;
+    }
+}
+
+@media (min-width:992px){
+    #carousel_inicio .carousel-item img{
+        height: 350px;
+    }
+}
+
+@media (min-width:1024px){
+    #carousel_inicio .carousel-item img{
+        height: 400px;
+    }
+}
+
+@media (min-width:1200px){
+    #carousel_inicio .carousel-item img{
+        height: 470px;
+    }
+}
+
+@media (min-width:1440px){
+    #carousel_inicio .carousel-item img{
+        height: 500px;
+    }
+}
+
+@media (min-width:2500px){
+    #carousel_inicio .carousel-item img{
+        height: 600px;
+    }
+}
+
+.btn-productos-carousel{
+    margin-top: 1rem;
+    width: 20%;
+    background-color: white;
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+    font-size: 2rem;
 }
 
 .text-carousel {
@@ -67,18 +187,130 @@ img {
     font-size: 2rem;
 }
 
+.text-carousel .btn-productos:hover{
+    background-color: #f44336;
+    color: white;
+}
+
 .presentation {
     color: black;
-    margin-top: 5%;
-    font-size: 4rem;
+    margin-top: 10%;
+    font-size: 2.2rem;
     justify-content: center;
     display: flex;
     text-align: center;
     flex-direction: column;
 }
 
-#info-empresa {
-    margin: 5% 0;
+@media (min-width:576px){
+    .presentation {
+        margin-top: 8%;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:768px){
+    .presentation{
+        font-size:3rem;
+    }
+}
+
+@media (min-width:992px){
+    .presentation {
+        margin-top: 6%;
+        font-size: 3.5rem;
+    }
+}
+
+#productos-inicio .card{
+    justify-content: space-between;
+}
+
+#carousel_productos {
+    position: sticky;
+}
+
+#carousel_inicio .fa-chevron-left, #carousel_inicio .fa-chevron-right{
+    color: rgb(255, 255, 255);
+}
+
+.fa-chevron-circle-left, .fa-chevron-circle-right {
+    color: rgb(72, 72, 72);
+}
+
+
+@media (min-width: 992px){
+    #carousel_productos {
+        display: none;
+    }
+    #productos-inicio .d-none {
+        display: flex!important;
+    }
+}
+
+@media (min-width: 768px){
+    #info-empresa-mobile{
+        display: none;
+    }
+    #info-empresa {
+        display: block!important;
+        margin: 5% 0;
+    }
+}
+
+@media (min-width: 768px){
+    .img-empresa {
+        display: flex;
+        height: 330px;
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/img-empresa.jpg);
+    }
+}
+
+@media (min-width: 992px){
+    .img-empresa {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px){
+    .img-empresa {
+        height: 500px;
+    }
+}
+
+@media (min-width: 2500px){
+    .img-empresa {
+        height: 800px;
+    }
+}
+
+@media (min-width: 768px){
+    .text-img-empresa {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+        margin-left: 5%;
+        padding-bottom: 5rem;
+        font-size: 1.5rem;
+        color: black;
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px){
+    .text-img-empresa {
+        padding-bottom: 10rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .text-img-empresa {
+        padding-bottom: 8rem;
+    }
 }
 
 .q-titulo {
@@ -94,6 +326,22 @@ img {
     background-position: center;
     background-size: cover;
     background-image: url("../img/contacta-con-nosotros.jpg");
+}
+
+.desc {
+    font-size: 2rem;
+}
+
+@media (min-width:768px){
+    .desc {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1200px){
+    .desc {
+        font-size: 1.8rem;
+    }
 }
 
 .formulario {
@@ -148,10 +396,6 @@ img {
     font-size: 1.7rem;
 }
 
-.desc{
-    font-size: 1.5rem;
-}
-
 body {
     background-color: withe;
 }
@@ -168,7 +412,7 @@ body {
 }
 
 .shadow {
-    box-shadow: -1px 0rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 0rem 1rem rgba(0, 0, 0, 0.15)!important;
 }
 
 .orden1 {
@@ -192,6 +436,14 @@ body {
     margin: 0 auto;
 }
 
+h1, h2 {
+    color: black;
+}
+
+h2{
+    font-size: 2rem;
+}
+
 .ejemplo-overflow {
     width: 100px;
     height: 110px;
@@ -202,18 +454,17 @@ body {
     overflow: auto;
 }
 
-.oferta {
+.info-tag {
     position: absolute;
     top: 10px;
-    left: 85%;
-    width: 23%;
+    left: 65%;
     padding: 0 5px;
     background-color: red;
     color: white;
     font-size: 1.3rem;
 }
 
-.menu-productos {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -224,21 +475,80 @@ ul{
     list-style-type: none;
 }
 
-.menu-productos li{
-    background-color: black;
-    border-radius: 0.8rem;
+#navbarNav li {
+    border-radius: 5px;
     padding: 5px 10px;
     font-size: 1.6rem;
 }
 
-#productos {
-    display: flex;
+#navbarNav li:active {
+    color: white;
+    background-color: red;
 }
 
-#filtros {
-    width: 20%;
-    margin-top: 3%;
-    padding: 0 4rem;
+#navbarNav li:hover {
+    color: white;
+    background-color: red;
+}
+
+#productos .filtro-1, #productos .filtro-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-filtro, #btn-ordenar{
+    width: 90%;
+    font-size: 1.5rem;
+    background-color:black;
+}
+
+#offcanvasTop {
+    height: 100%;
+}
+
+#offcanvasTop a{
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    border-top: 1px solid rgb(189, 185, 185);
+    display: block;
+}
+
+#offcanvasTop ul a{
+    border-top: 0px;
+}
+
+#productos .dropdown-menu.show{
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+#navbar-filtro-1 .container-fluid{
+    justify-content: center;
+}
+
+#navbar-filtro-1 .dropdown-toggle{
+    width: 100%;
+}
+
+@media (min-width: 992px){
+    .filtro-1, .filtro-2 {
+        display: none!important;
+    }
+}
+
+/*#productos {
+    display: flex;
+}*/
+
+@media (min-width: 992px){
+    #filtros-desktop {
+        display: flex!important;
+        margin-top: 3%;
+        padding: 0 4rem;
+        flex-flow: column;
+    }
 }
 
 .div-titulo{
@@ -252,14 +562,21 @@ ul{
 
 .titulo-filtro {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-bottom: 0.5rem;
 }
 
+#productos label {
+    font-size: 1.4rem;
+}
+
 #padre-products {
-    width: 80%;
     display: flex;
-    
+    margin-bottom: 3%;
+}
+
+#padre-products .card {
+    justify-content: space-between;
 }
 
 .padre-cards {
@@ -272,18 +589,45 @@ ul{
     color: black;
 }
 
+@media (min-width: 768px) and (max-width:991px){
+    .padre-cards {
+        gap: 150px;
+    }
+}
+
 .card h4, .card p, .card button{
     margin-top: 15px;
     text-align: center;
 }
 
-button, .card button, .button-conocer, .btn-productos {
+#productos-inicio button, .card button, .button-conocer, .btn-productos {
     width: 80%;
     border-radius: 5px;
     background-color: black;
     color: white;
     align-self: center;
     border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+#productos-inicio button:active, .card button:active, .button-conocer:active, .btn-productos:active{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+@media (min-width:992px){
+    #productos-inicio button:hover, .card button:hover, .button-conocer:hover, .btn-productos:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+}
+
+@media (min-width:1024px){
+    #productos-inicio button, .card button, .button-conocer, .btn-productos{
+        font-size: 1.7rem;
+    }
 }
 
 .button-productos {
@@ -293,14 +637,41 @@ button, .card button, .button-conocer, .btn-productos {
     margin: 5rem;
 }
 
+@media (min-width: 992px){
+    .button-productos-carousel {
+        justify-content: left;
+        text-align: left;
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
 .btn-productos{
-    width: 10%;
-    font-size: 2rem;
+    width: 50%;
+}
+
+@media (min-width: 576px) {
+    .btn-productos{
+        width: 130px;
+    }
 }
 
 .button-conocer {
     margin-top: 1rem;
     width: 40%;
+}
+
+@media (min-width:425px){
+    .button-conocer {
+        width: 30%;
+    }
+}
+
+@media (min-width:768px){
+    .button-conocer {
+        margin-top: 0px;
+        width: 140px;
+    }
 }
 
 .title-conocer {
@@ -371,29 +742,13 @@ button, .card button, .button-conocer, .btn-productos {
     width: 97%;
 }
 
-
-.img-empresa {
+.div-button-conocer {
+    justify-content: center;
     display: flex;
-    height: 490px;
-    max-width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../img/img-empresa.jpg");
+    margin-bottom: 2rem;
 }
 
-.text-img-empresa {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: center;
-    margin-left: 5%;
-    padding-bottom: 12rem;
-    font-size: 2rem;
-    color: black;
-    width: 30%;
-}
-
-footer {
+/*footer {
     background-color: black;
     margin-top: 3rem;
     display: flex;
@@ -401,29 +756,97 @@ footer {
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}*/
+
+footer {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem
+}
+
+@media (min-width: 1200px){
+    footer {
+        font-size: 1.7rem
+    }
+}
+
+footer p{
+    color: white;
+    margin-bottom: 0rem;
+}
+
+@media (min-width: 1200px){
+    footer p{
+        font-size: 1.7rem
+    }
 }
 
 .footer-contacto, .footer-galeria {
     margin-top: 0rem;
 }
-
-footer div {
-    width: 30%;
+footer .col-12, footer .col-md-4 {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
 }
 
-.div-1 {
-    margin-left: 10%;
+#enlaces a:active{
+    color: red;
 }
 
-.div-2 {
-    margin-right: 10%;
+@media (min-width: 992px){
+    #enlaces a:hover{
+        color: red;
+    }
 }
 
-.div-offset {
-    width: 26%;
+#redes-mobile{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 1rem;
+    font-size: 2.1rem;
+    gap: 10px;
+}
+
+#redes-mobile a:active{
+    color: red;
+}
+
+
+@media (min-width:768px){
+    .iconos{
+        justify-content: end!important;
+        padding-right: 1rem;
+        align-items: end;
+    }
+    #redes-mobile a:hover{
+        color: red;
+    }
+}
+
+@media (min-width:992px){
+    /*.redes{
+        align-items: end;
+        padding-top: 0rem;
+        padding-bottom: 0.5rem;
+    }*/
+}
+
+@media (min-width:992px){
+    #redes-desktop{
+        display: flex!important;
+    }
+    #redes-mobile{
+    }
+}
+
+@media (min-width:768px){
+    .rights {
+        text-align: left;
+        justify-content: center;
+        padding-top: 2rem;
+    }
 }
 
 .div-3 {
@@ -432,7 +855,15 @@ footer div {
     padding-top: 1rem;
 }
 
-.div-4 {
+.redes {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    justify-content: start;
+    flex-direction: row;
+    gap:10px;
+}
+
+/*.redes {
     width: 22%;
     color: white;
     padding-top: 1rem;
@@ -440,7 +871,7 @@ footer div {
     justify-content: end;
     flex-direction: row;
     gap:10px;
-}
+}*/
 
 .div-logo-footer {
     margin-left: 6%;
@@ -452,7 +883,20 @@ footer div {
 }
 
 .img-wp, .img-ig, .img-fc{
-    width: 10%;
+    width: 8%;
+    object-fit: contain;
+}
+
+@media (min-width:425px) {
+    .img-wp, .img-ig, .img-fc{
+        width: 6%;
+    }
+}
+
+@media (min-width:768px) {
+    .img-wp, .img-ig, .img-fc{
+        width: 25px;
+    }
 }
 
 .sob-nos {
